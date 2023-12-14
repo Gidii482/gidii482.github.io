@@ -1,69 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>electrical expert</title>
+    <title>Electrical Expert</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin:20px;
+            margin: 20px;
             background-color: #2980b9; /* Set your preferred background color */
         }
+
         header {
             text-align: center;
-            padding: 20px;
+            padding: 0px;
             color: #2980b9; /* Change this color to blue or your preferred text color */
         }
+
+        #profile-picture {
+            position: relative;
+        }
+
+        #profile-picture img {
+            width: 200px; /* Adjust as needed */
+            height: 160px; /* Maintain the aspect ratio */
+            border-radius: 70%; /* Make it circular */
+            margin-right: 10px; /* Add some space to the right of the picture */
+        }
+
+        .message-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px; /* Adjust as needed */
+            height: 30px; /* Maintain the aspect ratio */
+            background-color: #fff; /* Set background color */
+            border-radius: 50%; /* Make it circular */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
         main {
             margin-top: 20px;
             text-align: center;
         }
+
         main img {
             width: 50%; /* Adjust as needed to control the width of the image */
             height: auto; /* Maintain the aspect ratio of the image */
             display: block;
             margin: 0 auto; /* Center the image horizontally */
         }
+
         footer {
             text-align: center;
             padding: 10px;
-            background-color:  #ffa500;
+            background-color: #ffa500;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
     </style>
 </head>
+
 <body>
 
     <header>
+        <div id="profile-picture">
+            <img src="2020.jpg" alt="gideon">
+            <div class="message-icon" onclick="navigateToTelegram()">
+                <span>&#9993;</span> <!-- Unicode for an envelope symbol -->
+            </div>
+        </div>
         <h1>Empowering Tomorrow's Innovations:</h1>
         <h2>Revolutionizing the Future through Precision Engineering</h2>
         <p>Welcome to the world of cutting-edge electrical engineering, where expertise meets innovation. Join me on a journey of transforming ideas into reality, powering the future with technological brilliance.</p>
     </header>
 
     <main>
-        <h2>Welcome to to gideony electrical and electronics repairs</h2>
+        <h2>Welcome to Gideony Electrical and Electronics Repairs</h2>
         <p>
             - Designing, installing, maintaining, and troubleshooting electrical systems.<br>
             - Addressing intricate technical challenges with precision.<br>
             - Prioritizing quality craftsmanship and reliability.<br>
             - Staying updated with industry advancements to anticipate future needs.<br>
             - Empowering clients with electrical solutions aligned with current standards and future technology trends.
-        </p>.
-        <img src="2021.jpg" alt="gideon"> <!-- Replace 'your-picture-filename.jpg' with the actual filename of your picture -->  <!-- Contact Section -->
+        </p>
+        <img src="2021.jpg" alt="Gideon"> <!-- Replace 'your-picture-filename.jpg' with the actual filename of your picture -->
+        <!-- Contact Section -->
         <section>
             <h2>Contact Information</h2>
-            <p>Email:gidngetich35@gmail.com</p>
-            <p>Phone:+254726599250</p>
-            <p>Address: p o box 109-40600,chuka</p>
+            <p>Email: gidngetich35@gmail.com</p>
+            <p>Phone: +254726599250</p>
+            <p>Address: P.O. Box 109-40600, Chuka</p>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2023 Your Website Name. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript to handle the navigation -->
+    <script>
+        function navigateToTelegram() {
+            // Replace 'your-target-page.html' with the actual target page
+            window.location.href = 'https://t.me/Gid254';
+        }
+    </script>
+
 </body>
+
 </html>
